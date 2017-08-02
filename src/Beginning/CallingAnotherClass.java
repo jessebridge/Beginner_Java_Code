@@ -16,12 +16,13 @@ public class CallingAnotherClass {
         Scanner InputDevice = new Scanner(System.in);
         System.out.println("enter your name");
         String name = InputDevice.nextLine();
-        return name;
+        String lower = name.toLowerCase();
+        return lower;
 
 
     }
     public static String PersonStatus(String PersonName) {
-        if (PersonName.equals("jesse")){
+        if (PersonName.equals("jesse") || PersonName.equals("allan")){
             String PersonType = "good bloke";
             return PersonType;
         }
